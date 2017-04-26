@@ -1,0 +1,39 @@
+/* Street Talk question css */
+.street-talk-question {
+  background: #7f54a3;
+  color: #FFF;
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+  min-height: 100px;
+}
+.street-talk-question-inner {
+  padding: 0px 125px 0px 125px;
+  line-height:100px;
+}
+.street-talk-question-inner span {
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+.street-talk-question-inner::before {
+  position: absolute;
+  background: url("http://i.imgur.com/FoywsVn.png") no-repeat;
+  left: 15px;
+  margin-top: 8px;
+  display: block;
+  content: '';
+  width: 125px;
+  height: 88px;
+}
+
+.street-talk-question-inner::after {
+  position: absolute;
+  background: url("http://i.imgur.com/FoywsVn.png") no-repeat;
+  right: 15px;
+  margin-top: -90px;
+  display: block;
+  content: '';
+  width: 125px;
+  height: 88px;
+}

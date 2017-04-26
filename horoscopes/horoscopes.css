@@ -1,0 +1,21 @@
+.cmg-horoscopes img {
+  max-width: 75px !important;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.cmg-horoscopes h2, .cmg-horoscopes h3 {
+  margin: 0px !important;
+}
+
+.cmg-horoscopes {
+  margin-bottom: 10px;
+  padding-top: 75px;
+}
+
+.cmg-horoscopes.picker a img {
+    max-width: 20% !important;
+    float: none;
+}
