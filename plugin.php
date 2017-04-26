@@ -24,9 +24,8 @@ function gofundmetitleix_func( $atts, $content = null ){
 }
 add_shortcode( 'gofundmetitleix', 'gofundmetitleix_func' );
 
-
+//[sponsored]
 function sponsored_func( $atts, $content = null ){
-
     return "<div class='author-box-wrap sponsored-content'><h4>Sponsored</h4><p>" . $content . '</p></div>';
 }
 add_shortcode( 'sponsored', 'sponsored_func' );

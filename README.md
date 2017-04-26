@@ -121,5 +121,14 @@ This shortcode will create a box with a title of "Editor's Note" and some text. 
 ```
 ![Editor's Note Example](/screenshots/editors-note.png)
 
+### [sponsored]
+This shortcode will create a box with a title of "Sponsored" and some text. It must be closed with a [/sponsored]. It is intended to be used to provide a link or other text describing a sponsor of the content.
+
+#### Example
+```
+[sponsored]This is some text about a sponsor.[/sponsored]
+```
+![Sponsored Example](/screenshots/sponsored.png)
+
 ### [gofundmetitleix]
 This shortcode was created to embed a GoFundMe button on an article. It is not intended to be re-used
