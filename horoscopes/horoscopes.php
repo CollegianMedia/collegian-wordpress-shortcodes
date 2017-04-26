@@ -5,17 +5,6 @@ function horoscope_picker_func( $atts, $content = null ){
 }
 add_shortcode( 'horoscopes', 'horoscope_picker_func' );
 
-add_action('admin_head', 'fix_buffer_image_overflow');
-
-function fix_buffer_image_overflow() {
-  echo '<style>
-    .wp-menu-image {
-        overflow: hidden;
-    }
-  </style>';
-}
-
-
 //[aquarius]
 function horoscope_aquarius_func( $atts, $content = null ){
 	return '<div class="cmg-horoscopes" id="cmg-horoscopes-aquarius"><img src="' . plugins_url( 'images/aquarius.png', __FILE__ ) . '"><h2 class="horoscopes-aquarius">AQUARIUS</h2><h3>Jan. 20 – Feb. 18</h3></div>';
