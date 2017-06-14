@@ -79,6 +79,6 @@ add_shortcode( 'virgo', 'horoscope_virgo_func' );
 
 // Add the CSS for the horoscopes
 function horoscope_style_func() {
-	wp_enqueue_style('cmg-horoscopes', plugin_dir_url( __FILE__ ) . 'horoscopes.css');
+	wp_enqueue_style('cmg-horoscopes', plugin_dir_url( __FILE__ ) . 'horoscopes1.css');
 }
 add_action('wp_enqueue_scripts', 'horoscope_style_func');

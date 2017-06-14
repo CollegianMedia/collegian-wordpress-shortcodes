@@ -18,4 +18,5 @@
 .cmg-horoscopes.picker a img {
     max-width: 20% !important;
     float: none;
+    display: inline-block;
 }
