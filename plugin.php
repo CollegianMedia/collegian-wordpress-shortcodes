@@ -3,7 +3,7 @@
 Plugin Name: K-State Collegian Shortcodes
 Plugin URI: http://www.collegianmedia.com
 Description: Adds shortcodes to the Collegian WordPress site for special features the Collegian uses.
-Version: 1.01
+Version: 1.1
 Author: George Walker
 Author URI: http://georgewwalker.com
 License: GPL2
