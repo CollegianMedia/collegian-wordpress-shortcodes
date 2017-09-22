@@ -88,6 +88,13 @@ function retake_func( $atts, $content = null ){
 }
 add_shortcode( 'retake', 'retake_func' );
 
+//[channel8newsbutton]
+function channel8newsbutton_func( $atts, $content = null ){
+    return "<img src='" . plugins_url( 'images/channel8-button.png', __FILE__ ) . "' style='max-height: 28px;margin-top: 10px;margin-bottom: -10px;' alt='Channel 8 News'>";
+}
+add_shortcode( 'channel8newsbutton', 'channel8newsbutton_func' );
+
+
 // Add the CSS for shortcodes
 function cmgshortcode_style_func() {
 	wp_enqueue_style('cmg-shortcodes', plugin_dir_url( __FILE__ ) . 'shortcode.css');
