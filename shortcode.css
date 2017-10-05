@@ -37,3 +37,10 @@
   width: 125px;
   height: 88px;
 }
+
+/* Make the menu button smaller on the smaller layout */
+@media (max-width: 1018px) and (min-width: 768px) {
+  .cmg-menu-button {
+    max-height: 22px !important;
+  }
+}

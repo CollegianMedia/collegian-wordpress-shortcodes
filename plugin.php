@@ -3,7 +3,7 @@
 Plugin Name: K-State Collegian Shortcodes
 Plugin URI: http://www.collegianmedia.com
 Description: Adds shortcodes to the Collegian WordPress site for special features the Collegian uses.
-Version: 1.1
+Version: 1.2
 Author: George Walker
 Author URI: http://georgewwalker.com
 License: GPL2
@@ -11,9 +11,6 @@ License: GPL2
 
 // This file contains commonly used or single-shortcode functions.
 // If adding a group of shortcodes, create a subdirectory with those and include them here:
-
-
-// Include groups of shortcodes:
 include_once('horoscopes/horoscopes.php');
 include_once('bowlgames/bowlgames.php');
 
@@ -90,10 +87,15 @@ add_shortcode( 'retake', 'retake_func' );
 
 //[channel8newsbutton]
 function channel8newsbutton_func( $atts, $content = null ){
-    return "<img src='" . plugins_url( 'images/channel8-button.png', __FILE__ ) . "' style='max-height: 28px;margin-top: 10px;margin-bottom: -10px;' alt='Channel 8 News'>";
+    return "<img id='channel8newsbutton' class='cmg-menu-button' src='" . plugins_url( 'images/channel8-button.png', __FILE__ ) . "' style='max-height: 28px;margin-top: 10px;margin-bottom: -10px;' alt='Channel 8 News'>";
 }
 add_shortcode( 'channel8newsbutton', 'channel8newsbutton_func' );
 
+//[bestofmanhattanbutton]
+function bestofmanhattanbutton_func( $atts, $content = null ){
+    return "<img id="bestofmanhattanbutton" src='" . plugins_url( 'images/bestofmanhattan-button.png', __FILE__ ) . "' style='max-height: 28px;margin-top: 10px;margin-bottom: -10px;' alt='Best of Manhattan' title='Best of Manhattan: Purple Apple Awards'>";
+}
+add_shortcode( 'bestofmanhattanbutton', 'bestofmanhattanbutton_func' );
 
 // Add the CSS for shortcodes
 function cmgshortcode_style_func() {
