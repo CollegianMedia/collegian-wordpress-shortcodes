@@ -93,7 +93,7 @@ add_shortcode( 'channel8newsbutton', 'channel8newsbutton_func' );
 
 //[bestofmanhattanbutton]
 function bestofmanhattanbutton_func( $atts, $content = null ){
-    return "<img id="bestofmanhattanbutton" src='" . plugins_url( 'images/bestofmanhattan-button.png', __FILE__ ) . "' style='max-height: 28px;margin-top: 10px;margin-bottom: -10px;' alt='Best of Manhattan' title='Best of Manhattan: Purple Apple Awards'>";
+    return "<img id='bestofmanhattanbutton' src='" . plugins_url( 'images/bestofmanhattan-button.png', __FILE__ ) . "' style='max-height: 28px;margin-top: 10px;margin-bottom: -10px;' alt='Best of Manhattan' title='Best of Manhattan: Purple Apple Awards'>";
 }
 add_shortcode( 'bestofmanhattanbutton', 'bestofmanhattanbutton_func' );
 
